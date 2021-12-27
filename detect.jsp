@@ -355,8 +355,7 @@
             Object filter = _filter.get(appFilterConfig);
             String filterClassName = filter.getClass().getName();
             String filterClassLoaderName = filter.getClass().getClassLoader().getClass().getName();
-            out.write(String.format("<td style=\"text-align:center\">%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td style=\"text-align:center\"><a href=\"?action=dump&className=%s&kind=filter\">dump</a></td><td style=\"text-align:center\"><a href=\"?action=kill&filterName=%s\">kill</a></td>"
-                    , i + 1
+            out.write(String.format("<td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td style=\"text-align:center\"><a href=\"?action=dump&className=%s&kind=filter\">dump</a></td><td style=\"text-align:center\"><a href=\"?action=kill&filterName=%s\">kill</a></td>"
                     , getFilterName(fm)
                     , null
                     , filterClassName
@@ -392,8 +391,7 @@
                     servletClassLoaderName = servletClass.getClassLoader().getClass().getName();
                 } catch (Exception e) {
                 }
-                out.write(String.format("<td style=\"text-align:center\">%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td style=\"text-align:center\"><a href=\"?action=dump&className=%s&kind=servlet\">dump</a></td><td style=\"text-align:center\"><a href=\"?action=kill&servletName=%s\">kill</a></td>"
-                        , servletId + 1
+                out.write(String.format("<td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td style=\"text-align:center\"><a href=\"?action=dump&className=%s&kind=servlet\">dump</a></td><td style=\"text-align:center\"><a href=\"?action=kill&servletName=%s\">kill</a></td>"
                         , servletName1
                         , servletMapPath
                         , servletClassName
@@ -411,8 +409,7 @@
         for (EventListener eventListener : applicationEventlistenersList) {
             String eventListenername = eventListener.getClass().getName();
             String eventListenerloader = eventListener.getClass().getClassLoader().getClass().getName();
-            out.write(String.format("<td style=\"text-align:center\">%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td style=\"text-align:center\"><a href=\"?action=dump&className=%s&kind=listener\">dump</a></td><td style=\"text-align:center\"><a href=\"?action=kill&servletName=%s\">kill</a></td>"
-                    , listenerID
+            out.write(String.format("<td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td style=\"text-align:center\"><a href=\"?action=dump&className=%s&kind=listener\">dump</a></td><td style=\"text-align:center\"><a href=\"?action=kill&servletName=%s\">kill</a></td>"
                     , eventListenername
                     , '/'
                     , eventListenername
@@ -429,8 +426,7 @@
         while (valve != null) {
             String valvename = valve.getClass().getName();
             String valveloadername = valve.getClass().getClassLoader().getClass().getName();
-            out.write(String.format("<td style=\"text-align:center\">%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td style=\"text-align:center\"><a href=\"?action=dump&className=%s&kind=valve\">dump</a></td><td style=\"text-align:center\"><a href=\"?action=kill&servletName=%s\">kill</a></td>"
-                    , valveID
+            out.write(String.format("<td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td style=\"text-align:center\"><a href=\"?action=dump&className=%s&kind=valve\">dump</a></td><td style=\"text-align:center\"><a href=\"?action=kill&servletName=%s\">kill</a></td>"
                     , valvename
                     , '/'
                     , valvename
