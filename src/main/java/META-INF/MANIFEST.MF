@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: NoAgent.detect
+Can-Redefine-Classes: true
+Can-Retransform-Classes: true
+
