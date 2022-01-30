@@ -1,5 +1,5 @@
 # NoAgent-memshell-scanner
-NoAgent内存马检测程序
+NoAgent内存马检测程序 
 
 使用环境 java8 + tomcat
 
@@ -13,4 +13,8 @@ NoAgent内存马检测程序
   
   tomcat filter型，servlet型，listener型，valve型
   
-  待添加
+  spring interceptor,controller型内存马已更新
+
+添加了非agent型内存马的kill功能。
+  
+  
