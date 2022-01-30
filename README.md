@@ -13,8 +13,10 @@ NoAgent内存马检测程序
   
   tomcat filter型，servlet型，listener型，valve型
   
-  spring interceptor,controller型内存马已更新
+---更新
+  
+spring interceptor,controller型内存马已更新
 
-添加了非agent型内存马的kill功能。
+添加了非agent型内存马的删除功能，即kill。
   
   
